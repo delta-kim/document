@@ -84,7 +84,7 @@
 
 $$
 \begin{matrix}
-Delta & Core & Developer\\
-    \qquad \qquad 2023年11月
+Delta&Core&Developer \\
+\qquad \qquad 2023年11月
 \end{matrix} 
 $$
