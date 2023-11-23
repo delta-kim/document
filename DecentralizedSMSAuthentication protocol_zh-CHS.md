@@ -1,6 +1,7 @@
-# **去中心化短信认证协议**
 
-# **（三无认证协议）**
+
+# **<center>去中心化短信认证协议**
+# **<center>（三无认证协议）</center>**
 
 
 ## 1. 介绍
@@ -50,7 +51,7 @@
 
 ## 4. 协议流程
 
-![](RackMultipart20231123-1-ddd6c7_html_dd940dbe8ea25890.png)
+![](./asset/DSMSAuthflow_chart.zh.png)
 
 
 ## 5. 验证者激励机制
@@ -79,6 +80,11 @@
 
 当系统刚开始运行的早期还没有用户加入成为验证者的时候，系统需要一个中心化的接入号为早期用户提供验证接入服务。之后，当验证者达到一定数量后可设置自动移除该接入号码。
 
-Delta Core Developer
+<br/><br/>
 
-2023年11月
+$$
+\begin{matrix}
+Delta & Core & Developer\\
+    \qquad \qquad 2023年11月
+\end{matrix} 
+$$
