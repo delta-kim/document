@@ -1,18 +1,18 @@
 
 
-# **<center>Decentralized SMS Authentication Protocol**
-# **<center> (3-No Authentication Protocol)</center>**
+# **<center>Decentralized SMS Verification Protocol**
+# **<center> (3-No-Verification Protocol)</center>**
 
 
 ## 1. Introduction
 
-The design goal of the decentralized SMS authentication protocol is mainly to solve the problem of user account identity authentication in decentralized applications. It is a protocol framework for the design of decentralized SMS authentication programs.
+The design goal of the decentralized SMS verification protocol is mainly to solve the problem of user account identity verification in decentralized applications. It is a protocol framework for the design of decentralized SMS verification programs.
 
-If traditional email or SMS authentication methods are still used in decentralized applications, their degree of decentralization and service continuity will be seriously questioned. This is because email authentication requires a dedicated outbox address, and SMS authentication requires a SMS access number or sending port that is applied for in a telecommunications company. These resources not only require continuous maintenance, but also require payment; therefore, these tasks also require a centralized human operation to perform. Therefore, such procedures will seriously cause user distrust and contradict the core concept of decentralized applications.
+If traditional email or SMS verification methods are still used in decentralized applications, their degree of decentralization and service continuity will be seriously questioned. This is because email verification requires a dedicated outbox address, and SMS verification requires a SMS access number or sending port that is applied for in a telecommunications company. These resources not only require continuous maintenance, but also require payment; therefore, these tasks also require a centralized human operation to perform. Therefore, such procedures will seriously cause user distrust and contradict the core concept of decentralized applications.
 
-In the context of the birth of Bitcoin, asymmetric private keys were used as a means of permission authentication. This approach is a fully decentralized authentication scheme. Later, in order to facilitate user memory and management, developers derived mnemonic solutions and widely used them in decentralized applications. However, these solutions have risks such as loss, forgetting, and misappropriation of private keys or mnemonics, and can cause users to feel anxious.
+In the context of the birth of Bitcoin, asymmetric private keys were used as a means of permission authentication. This approach is a fully decentralized verification scheme. Later, in order to facilitate user memory and management, developers derived mnemonic solutions and widely used them in decentralized applications. However, these solutions have risks such as loss, forgetting, and misappropriation of private keys or mnemonics, and can cause users to feel anxious.
 
-The verification method of the decentralized SMS authentication protocol can be designed for the system such that users do not need passwords, private keys, or mnemonics to authenticate their identities, which is why we refer to it as the "3-No Authentication".
+The verification method of the decentralized SMS verification protocol can be designed for the system such that users do not need passwords, private keys, or mnemonics to authenticate their identities, which is why we refer to it as the "3-No-Verification".
 
 
 ## 2. Roles and Nouns
@@ -31,7 +31,7 @@ A real person, a service user and an owner of exclusive resources, interacts wit
 
 - Verify the terminal
 
-Refers to the access terminal that provides user authentication.  The terminal consists of a mobile device and a corresponding authentication terminal program installed on it, as well as a SIM card that carries the MSISDN. It is responsible for receiving user SMS authentication information, obtaining the user's sending number, and forwarding it to the server-side.
+Refers to the access terminal that provides user authentication.  The terminal consists of a mobile device and a corresponding verification terminal program installed on it, as well as a SIM card that carries the MSISDN. It is responsible for receiving user SMS verification information, obtaining the user's sending number, and forwarding it to the server-side.
 
 - Verify terminal pool
 
@@ -39,7 +39,7 @@ The verification terminal pool is composed of verification terminals provided by
 
 - Verifier
 
-The individual who has obtained authentication authority in the system is responsible for starting and maintaining the authentication terminal.
+The individual who has obtained verification authority in the system is responsible for starting and maintaining the verification terminal.
 
 
 ## 3. Methods
@@ -65,7 +65,7 @@ The fraud of the verifier refers to the behavior of the verifier who forges the 
 
 In order to prevent the verifier from fraud, the following measures are generally taken:
 
-1. When returning a list of user-selectable authentication terminals in the authentication terminal pool, the MSISDN of the authentication terminal access should be displayed in a non-cleartext or semi-cleartext format. In this way, the authenticator will not be able to select the authentication terminal controlled by themselves in the optional authentication list, thus preventing the authenticator from forging the MSISDN of others through technical means for fraud.
+1. When returning a list of user-selectable verification terminals in the verification terminal pool, the MSISDN of the verification terminal access should be displayed in a non-cleartext or semi-cleartext format. In this way, the authenticator will not be able to select the verification terminal controlled by themselves in the optional verification list, thus preventing the authenticator from forging the MSISDN of others through technical means for fraud.
 2. Keep multiple verification terminals in sync for verification.  In this way, dishonest verifiers will have difficulty conspiring with other unfamiliar verifiers. This mechanism can further increase the difficulty of dishonest verifiers' operations.
 
 Through the above measures, the occurrence of fraudulent behavior by verifiers can be effectively prevented, protecting the security and reliability of the system.
@@ -73,7 +73,7 @@ Through the above measures, the occurrence of fraudulent behavior by verifiers c
 
 ## 7. Reliability Score
 
-In order to ensure the availability and reliability of authentication, we can establish an appropriate scoring mechanism to incentivize authenticators to maintain high-quality networks and power for authentication terminals. By collecting real-time information on the mobile signal quality and network latency of the terminal, we can form a real-time score. Users can choose higher-quality authentication terminals based on this score, which further promotes authenticators to better maintain the availability and reliability of authentication terminals. This not only ensures the smoothness of user authentication, but also incentivizes authenticators to provide better services.
+In order to ensure the availability and reliability of authentication, we can establish an appropriate scoring mechanism to incentivize authenticators to maintain high-quality networks and power for verification terminals. By collecting real-time information on the mobile signal quality and network latency of the terminal, we can form a real-time score. Users can choose higher-quality verification terminals based on this score, which further promotes authenticators to better maintain the availability and reliability of verification terminals. This not only ensures the smoothness of user authentication, but also incentivizes authenticators to provide better services.
 
 
 ## 8. Process Self-Motivation Measures
